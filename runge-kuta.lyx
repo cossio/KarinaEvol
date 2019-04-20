@@ -1,0 +1,127 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}x}{\mathrm{d}t}=f\left(x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+k_{1} & =f\left(x\right)\Delta t=f\left(x_{1}\right)\Delta t\\
+k_{2} & =f\left(x+\frac{1}{4}k_{1}\right)\Delta t=f\left(x_{2}\right)\Delta t\\
+k_{3} & =f\left(x+\frac{3}{32}k_{1}+\frac{9}{32}k_{2}\right)\Delta t=f\left(x_{3}\right)\Delta t\\
+k_{4} & =f\left(x+\frac{1932}{2197}k_{1}-\frac{7200}{2197}k_{2}+\frac{7296}{2197}k_{3}\right)\Delta t=f\left(x_{4}\right)\Delta t\\
+k_{5} & =f\left(x+\frac{439}{216}k_{1}-8k_{2}+\frac{3680}{513}k_{3}-\frac{845}{4104}k_{4}\right)\Delta t=f\left(x_{5}\right)\Delta t\\
+k_{6} & =f\left(x-\frac{8}{27}k_{1}+2k_{2}-\frac{3544}{2565}k_{3}+\frac{1859}{4104}k_{4}-\frac{11}{40}k_{5}\right)\Delta t=f\left(x_{6}\right)\Delta t
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+x_{1}=x & =x\\
+x_{2}=x+\frac{1}{4}k_{1} & =x_{1}+\frac{1}{4}k_{1}\\
+x_{3}=x+\frac{3}{32}k_{1}+\frac{9}{32}k_{2} & =x_{2}+\left(\frac{3}{32}-\frac{1}{4}\right)k_{1}+\frac{9}{32}k_{2}\\
+x_{4}=x+\frac{1932}{2197}k_{1}-\frac{7200}{2197}k_{2}+\frac{7296}{2197}k_{3} & =x_{3}+\left(\frac{1932}{2197}-\frac{3}{32}\right)k_{1}-\left(\frac{7200}{2197}+\frac{9}{32}\right)k_{2}+\frac{7296}{2197}k_{3}\\
+x_{5}=x+\frac{439}{216}k_{1}-8k_{2}+\frac{3680}{513}k_{3}-\frac{845}{4104}k_{4} & =x_{4}+\left(\frac{439}{216}-\frac{1932}{2197}\right)k_{1}-\left(8-\frac{7200}{2197}\right)k_{2}+\left(\frac{3680}{513}-\frac{7296}{2197}\right)k_{3}-\frac{845}{4104}k_{4}\\
+x_{6}=x-\frac{8}{27}k_{1}+2k_{2}-\frac{3544}{2565}k_{3}+\frac{1859}{4104}k_{4}-\frac{11}{40}k_{5} & =x_{5}-\left(\frac{8}{27}+\frac{439}{216}\right)k_{1}+\left(2+8\right)k_{2}-\left(\frac{3544}{2565}+\frac{3680}{513}\right)k_{3}+\left(\frac{1859}{4104}+\frac{845}{4104}\right)k_{4}-\frac{11}{40}k_{5}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\epsilon\Delta t=\left|\frac{1}{360}k_{1}-\frac{128}{4275}k_{3}-\frac{2197}{75240}k_{4}+\frac{1}{50}k_{5}+\frac{2}{55}k_{6}\right|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x\left(t+\Delta t\right)=x\left(t\right)+\frac{25}{216}k_{1}+\frac{1408}{2565}k_{3}+\frac{2197}{4104}k_{4}-\frac{1}{5}k_{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
